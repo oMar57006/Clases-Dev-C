@@ -1,3 +1,7 @@
+/*
+Desarrollar un programa en Lenguaje C que solicite
+al usuario un numero e indique si es par o impar
+*/
 #include <stdio.h>
 
 int main (){
