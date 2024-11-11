@@ -1,5 +1,5 @@
 //
-Ejercicio Positivo Negativo
+EJERCICIO POSITIVO NEGATIVO
 //
 #include <stdio.h>
 int main (){
@@ -25,7 +25,7 @@ int main (){
 }
 
 //
-Ejercicio edad 
+EJERCICIO EDAD
 //
 
 #include <stdio.h>
@@ -55,5 +55,26 @@ int main (){
 		printf ("Error, colocar bien la edad");
 	}}
 
+	return 1;
+}
+
+//
+EJERCICIO DIA DE LA SEMANA CON SWITCH
+//
+#include <stdio.h>
+int main (){
+	int dia;
+	printf ("ingrese el dia de la semana (1-7)");
+	scanf("%d", &dia);
+	switch (dia){
+		case 1: printf("Domingo"); break;
+		case 2: printf("lunes"); break;
+		case 3: printf("Martes"); break;
+		case 4: printf("Miercoles"); break;
+		case 5: printf("Jueves"); break;
+		case 6: printf("Viernes"); break;
+		case 7: printf("Sabado"); break;
+		default: printf ("Error, solo elegir numero del 1 al 7"); break;
+	}
 	return 1;
 }
