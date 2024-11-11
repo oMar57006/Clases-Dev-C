@@ -1,0 +1,59 @@
+//
+Ejercicio Positivo Negativo
+//
+#include <stdio.h>
+int main (){
+	int num;
+	printf("ingrese un numero: ");
+	scanf("%d", &num);
+	if (num==0)
+	{
+		printf ("Su numero es 0");
+	}
+	
+		if(num>0)
+		{
+		printf ("su numero es positivo");
+	}
+	
+		if (num<0)
+	{
+		printf ("Su numero es negativo");
+	}
+		else
+	return 1;
+}
+
+//
+Ejercicio edad 
+//
+
+#include <stdio.h>
+int main (){
+	int edad;
+	printf("ingrese su edad: ");
+	scanf("%d", &edad);
+	if (edad>=18 && edad<65)
+	{
+		printf ("Usted es mayor de edad");
+	}
+	else{
+		
+		if(edad<18 && edad>0)
+		{
+		printf ("Usted es menor de edad");
+	}}
+	
+		if (edad>=65)
+	{
+		printf ("Usted tercera edad");
+	}
+	else{
+	
+		if (edad<=0)
+	{
+		printf ("Error, colocar bien la edad");
+	}}
+
+	return 1;
+}
