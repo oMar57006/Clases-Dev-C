@@ -5,30 +5,7 @@ int main (){
 	//Definición de vector de numeros enteros
 	int numeros [MAX];
 	int i;
-	int opcion;
 	
-	do{
-		printf("Menu de opciones\n");
-		printf("****************\n");
-		printf("1) Ingreso de numeros\n");
-		printf("2) Mostrar numeros ingresados\n");
-		printf("3) Salir\n");
-		fflush(stdin);
-		scanf("%d", &opcion);
-			
-			switch (opcion){
-				case 1:
-					break;
-				case 2:
-					break;
-				case 3:
-					break;
-				default: 
-					break;
-			}
-	}while(opcion!=3);
-	
-
 	//ingreso de numeros
 	printf("Programa para calcular la suma de 10 numeros\n");
 	for(i=0; i<MAX; i++){
@@ -42,4 +19,61 @@ int main (){
 		printf("numeros [%d]=>%d \n", i, numeros[i]);
 	}
 	
+}
+
+
+////////////////////////////////////////////
+////		SEGUNDO			////
+////	EJEMPLO	DEL MISMO EJERCICIO	////
+////////////////////////////////////////////
+
+
+#include <stdio.h>
+#define MAX 3
+
+int main (){
+	//Definición de vector de numeros enteros
+	int numeros [MAX];
+	int i;
+	int opcion;
+	
+	do{
+		printf("Menu de opciones\n");
+		printf("****************\n");
+		printf("1) Ingreso de numeros\n");
+		printf("2) Mostrar numeros ingresados\n");
+		printf("3) Salir\n");
+		fflush(stdin);
+		scanf("%d", &opcion);
+			
+			switch (opcion){
+				case 1:
+						//Ingreso de numeros
+						
+						printf("Programa para calcular la suma de 3 numeros\n");
+						for(i=0; i<MAX; i++){
+							printf("Ingrese un numeros %d: ", i+1);
+							scanf("%d", &numeros[i]);
+						}	
+					break;
+					
+				case 2:
+						//mostrar en pantalla numeros almacenados en el vector
+						
+						printf("Numeros almacenados en el vector\n");
+						for(i=0; i<MAX; i++){
+						printf("numeros [%d]=>%d \n", i, numeros[i]);
+						}
+					break;
+					
+				case 3:
+					printf("GRACIAS POR USAR NUESTRO SISTEMA");
+					break;
+					
+				default: 
+					printf("Error, opcion incorrecta\n");
+					printf("Seleccione una opcion valida\n");
+					break;
+			}
+	}while(opcion!=3);
 }
