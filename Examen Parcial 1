@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main (){
+	float notas;
+	int i, notaa=0, notab=0, notac=0;
+	for (i=0; i<10 ; i++){
+		printf ("Ingrese las notas de los estudiantes\n ");
+		scanf("%f", &notas);
+	
+	if (notas<=10 && notas>7.5){
+		notaa++;
+	}
+	if (notas<7.4 && notas>=4.0){
+		notab++;
+	}
+	if (notas<4){
+		notac++;
+	}
+	}
+	printf("Notas con Calificacion A %d \n", notaa);
+	printf("Notas con Calificacion B %d \n", notab);
+	printf("Notas con Calificacion C %d \n", notac);
+	
+	return 1;
+}
